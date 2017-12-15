@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>答题系统</title>
+    <script type="text/javascript" src="../public/jquery-3.2.0.min.js"></script>
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+</head>
+<body>
+<legend>
+    <button class="layui-btn layui-btn-radius" onclick="indexPage.showTK()">填空题</button>
+    <button class="layui-btn layui-btn-normal layui-btn-radius" onclick="indexPage.showXZ()">选择题</button>
+    <button class="layui-btn layui-btn-warm layui-btn-radius" onclick="indexPage.showPD()">判断题</button>
+</legend>
+
+<div id="showCountByTK" style="width: 100%;margin: 0 auto">
+
+</div>
+
+<div id="showCountByXZ">
+
+</div>
+
+<div id="showCountByPD">
+
+</div>
+
+<div style="text-align: center;width: 800px">
+    <button class="layui-btn" id="showAll" onclick="indexPage.showAll()">查看总分数</button>
+    <button class="layui-btn layui-btn-danger" onclick="indexPage.clear()">清除分数</button>
+    <span style="display: none" id="showMsg"></span>
+</div>
+
+<script src="../public/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>
